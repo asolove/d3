@@ -1,5 +1,6 @@
-function d3_selection(groups) {
+function d3_selection(groups, parentSelection) {
   d3_arraySubclass(groups, d3_selectionPrototype);
+  groups.parentSelection = parentSelection;
   return groups;
 }
 
